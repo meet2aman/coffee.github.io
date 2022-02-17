@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+    <!-- Gsap CDn library -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+
+     <!-- AOS CSS -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    
+
+    <!-- AOS js-->
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+
+
+    <!-- Style CSS3 -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header start -->
+    <header class="header p-3 position-absolute start-0 top-0 end-0">
+
+        <div class="d-flex justify-content-between align-items-center">
+
+            <a href="/" class="text-decoration-none text-white fs-5 fw-bold">Coffee.</a>
+
+            <div>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                    aria-Label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- header End   -->
+
+
+    <!--Flyout Navigation-->
+
+    <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+        <div class="container-fluid">
+            <div class="row align-items-start">
+                <div class="col-12 col-sm-4 text-white mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4">
+                            <img src="./img/1-coffe-flavour.jpg" alt="coffee Flavour" class="img-fluid" width="553"
+                            height="746" Loading="lazy">
+                        </div>
+                        <div class="col-10">
+                            <h3>Amazing Flavour</h3>
+                            <p>Find Out More About Our Amazing Flavour</p>
+                            <p class="para"><span>Learn More<i class="bi bi-arrow-right"></i></span></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-4 text-white mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4">
+                            <img src="./img/2-health-benefits.jpg" alt="coffee Flavour" class="img-fluid" width="553"
+                            height="746" Loading="lazy">
+                        </div>
+                        <div class="col-10">
+                            <h3>Amazing Flavour</h3>
+                            <p>Find Out More About Our Amazing Flavour</p>
+                            <p class="para"><span>Learn More<i class="bi bi-arrow-right"></i></span></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-4 text-white mt-4">
+                    <a href="#" class="row text-decoration-none">
+                        <div class="col-2 col-sm-12 mb-4">
+                            <img src="./img/3-essential-nutrients.jpg" alt="coffee Flavour" class="img-fluid" width="553"
+                            height="746" Loading="lazy">
+                        </div>
+                        <div class="col-10">
+                            <h3>Amazing Flavour</h3>
+                            <p>Find Out More About Our Amazing Flavour</p>
+                            <p class="para"><span>Learn More<i class="bi bi-arrow-right"></i></span></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+            <button class="navbar-toggler  dropdown-nav__closeNavBtn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-Label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+        </div>
+
+    </nav>
+
+    <!--Flyout Navigation End-->
+
+    <!--Hero Start-->
+
+<section class="hero">
+
+        <div class="hero__overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" Loading="lazy" class="hero__video">
+            <source src="./img/Pexels Videos 2675515.mp4">
+        </video>
+
+        <div class="hero__content h-100 container-xxl position-relative">
+            <div class="d-flex h-100 align-items-center hero__content-width">
+                <div class="text-white">
+                    <h1 class="hero__heading fw-bold mb-4" >Discover The Taste of Real <span>Coffee.</span></h1>
+                    <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus voluptatibus ex?</p>
+                    <a href="#" class="mt-2 btn btn-lg btn-outline-light buy-now" role="button">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <a href="#scroll-down" class="hero__scroll-btn moveInSpace">Explore<i class="bi bi-arrow-down"></i></a>
+</section>
+
+
+<a  id="scroll-down"></a>
+
+   <!-- Section One start -->
+<section class="background">
+   <section class="steps container-custom-1 py-4" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center">
+
+<div class="row">
+
+    <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+      <img src="./img/1-coffe-flavour.jpg" alt="#" width="553" height="746" Loading="lazy" class="img1">
+    </div>
+
+    <div class="col-12 col-sm-6 justify-content-md-center align-self-center text-white">
+        <div class="steps__content-width">
+            <span>01</span>
+            <h1 class="h2 mb-4">Amazing <span>Coffee</span> Flavour.</h1>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam alias suscipit tenetur laudantium id laborum iste ab necessitatibus excepturi.</p>
+            <a href="#" class="read-more">Read More. <i class="bi bi-arrow-right"></i></a>
+        </div>
+        
+    </div>
+</div>
+</section>
+<a href="#scroll-down2" class="hero__scroll-btn2 moveInSpace">Explore<i class="bi bi-arrow-down"></i></a>
+</section>
+
+
+
+
+
+<a  id="scroll-down2"></a>
+
+<!-- Section Two start -->
+
+<section class="background">
+    <section class="steps container-custom-1 py-4" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-out-cubic" data-aos-anchor-placement="top-center">
+ 
+ <div class="row">
+ 
+     <div class="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1">
+       <img src="./img/2-health-benefits.jpg" alt="#" width="553" height="746" Loading="lazy" class="img2">
+     </div>
+ 
+     <div class="col-12 col-sm-6 justify-content-md-center align-self-center text-white" style="
+     padding-left: 58px;">
+         <div class="steps__content-width2">
+             <span>02</span>
+             <h1 class="h2 mb-4">Surprising <span>Coffee</span> Benefits.</h1>
+             <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam alias suscipit tenetur laudantium id laborum iste ab necessitatibus excepturi.</p>
+             <a href="#" class="read-more">Read More. <i class="bi bi-arrow-right"></i></a>
+         </div>
+         
+     </div>
+ </div>
+ </section>
+ <a href="#scroll-down3" class="hero__scroll-btn2 moveInSpace hero__scroll-btn3">Explore<i class="bi bi-arrow-down"></i></a>
+ </section>
+ 
+ <a  id="scroll-down3"></a> 
+
+<!-- Section three start -->
+
+<section class="background">
+    <section class="steps container-custom-1 py-4" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out-cubic" data-aos-anchor-placement="center-bottom">
+ 
+ <div class="row">
+ 
+     <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+       <img src="./img/3-essential-nutrients.jpg" alt="#" width="553" height="746" Loading="lazy" class="img3">
+     </div>
+ 
+     <div class="col-12 col-sm-6 justify-content-md-center align-self-center text-white" style="
+     padding-left: 58px;">
+         <div class="steps__content-width">
+             <span>03</span>
+             <h1 class="h2 mb-4">Essential <span>Coffee</span> Nutrients.</h1>
+             <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam alias suscipit tenetur laudantium id laborum iste ab necessitatibus excepturi.</p>
+             <a href="#" class="read-more">Read More. <i class="bi bi-arrow-right"></i></a>
+         </div>
+         
+     </div>
+ </div>
+ </section>
+ <a href="#scroll-down4" class="hero__scroll-btn4 moveInSpace hero__scroll-btn4">Explore<i class="bi bi-arrow-down"></i></a>
+ </section>
+ 
+ <a  id="scroll-down4"></a> 
+
+<!-- Section three end -->
+
+<section class="bg-dark">
+<section class="bg-dark text-white py-2" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-out-cubic">
+    <div class="custom-container my-4">
+        <div class="row">
+            <div class="c0l-12 col-sm-4 mb-4">
+                <img class="image" src="./img/1-coffee-flavour-small.jpg" width="441" height="248" Loading="lazy">
+                <h3>Amazing <span>Coffee</span> Flavour.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore nobis velit inventore odit ipsa molestiae blanditiis facere adipisci voluptatibus!</p>
+            </div>
+
+            <div class="c0l-12 col-sm-4 mb-4">
+                <img class="image" src="./img/2-health-benefits-small.jpg" width="441" height="248" Loading="lazy">
+                <h3>Amazing <span>Coffee</span> Health Benefits.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore nobis velit inventore odit ipsa molestiae blanditiis facere adipisci voluptatibus!</p>
+            </div>
+
+            <div class="c0l-12 col-sm-4 mb-4">
+                <img class="image" src="./img/3-essential-nutrients-small.jpg" width="441" height="248" Loading="lazy">
+                <h3>Essential<span> Coffee</span> Nutrients.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore nobis velit inventore odit ipsa molestiae blanditiis facere adipisci voluptatibus!</p>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+
+
+<!-- ends -->
+
+
+<!-- footer  -->
+<footer class="footer text-white bg-dark">
+    <div class="container custom d-flex justify-content-between align-items-center py-3 border-highlights">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="me-2 text-muted text-decoration-none">
+                <i class="bi bi-cup"></i>
+                <span>&copy; 2022 Coffee.</span>
+                <span>By Aman Kushwaha</span>
+            </a>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled text-white d-flex">
+            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-twitter"></i></a></li>
+
+            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-facebook"></i></a></li>
+
+            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Main js -->
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
